@@ -18,10 +18,9 @@ const Header = () => {
     return(
         <div className={styles.header}>
             <div className={styles.header_grid}>
-                <div style={{
-                    display: 'grid',
-                    gridTemplateColumns: '70px auto'
-                }}>
+                <div
+                    className={styles.header_grid_left}
+                    >
                     <img src="logo.svg" width={50} height={50}/>
                     <div style={{
                         display: 'grid',
@@ -49,7 +48,7 @@ const Header = () => {
                                 top: 6,
                                 right: 6,
                                 background: searchBtnOpacity ? '#ffcc00' : 'transparent',
-                                borderRadius: '35px',
+                                borderRadius: '10px',
                                 height: 38,
                                 display: 'flex',
                                 flex: 1,
@@ -65,12 +64,9 @@ const Header = () => {
                         <img src="okniks.svg" width={30} height={30}/>
                     </div>
                 </div>
-                <div style={{
-                    color: '#90919d',
-                    display: 'grid',
-                    gridTemplateColumns: 'auto auto 70px',
-                    alignItems: 'center'
-                }}>
+                <div
+                    className={styles.header_grid_right}
+                    >
                        <div>
                             <svg className="geolink__button" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                  viewBox="0 0 16 16">

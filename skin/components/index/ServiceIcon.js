@@ -1,20 +1,15 @@
-const ServiceIcon = () =>{
+import styles from '../../styles/components/Serviceicon.module.scss'
+const ServiceIcon = ({image, title}) =>{
     return(
-        <div style={{
-            textAlign: 'center'
-        }}>
-            <div className=""
+        <div  className={styles.service_icon}>
+            <div className={styles.service_icon_image}
                  style={{
-                     width: 65,
-                     height: 65,
-                     backgroundImage: 'url(//yastatic.net/s3/home/services/block/market_1111.svg)',
-                     backgroundRepeat: 'no-repeat',
-                     backgroundSize: '100%'
+                     backgroundImage: `url(${image})`,
                  }}
 
             >
             </div>
-            Маркет
+            {title}
         </div>
     )
 }

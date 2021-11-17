@@ -1,5 +1,9 @@
+@import '_variables.scss';
+
 .container {
   padding: 0 25px;
+  max-width: $container;
+  margin: 0 auto;
 }
 
 .main {

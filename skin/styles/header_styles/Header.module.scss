@@ -1,3 +1,4 @@
+@import '../_variables.scss';
 
 .header {
   position: fixed;
@@ -16,12 +17,25 @@
     width: 100%;
     grid-template-columns: 50% 50%;
     grid-column-gap: 25px;
+    max-width: $container;
+    margin: auto;
+
+    &_left {
+      display: grid;
+      grid-template-columns: 70px auto;
+    }
+    &_right {
+      color: #90919d;
+      display: grid;
+      grid-template-columns: auto auto 70px;
+      align-items: center
+    }
   }
 
   &_input {
     background-color: #F1F2F4;
     border: 1px solid transparent;
-    border-radius: 100px;
+    border-radius: 15px;
     padding-left: 20px;
     font-size: 16px;
     color:  #90919d;

@@ -1,0 +1,12 @@
+.link {
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: 24px auto;
+  align-items: flex-start;
+}
+
+.link img {
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+}
